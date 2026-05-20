@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+
+int main()
+{
+    char p[100], c[100];
+    int k, i, n;
+
+    printf("Enter the plain text: ");
+    scanf("%s", p);
+
+    printf("Enter the key value: ");
+    scanf("%d", &k);
+
+    printf("\nPLAIN TEXT : %s", p);
+    printf("\nENCRYPTED TEXT : ");
+
+    n = strlen(p);
+
+    for(i = 0; i < n; i++)
+    {
+        c[i] = p[i] + k;
+
+        if(isupper(p[i]) && c[i] > 'Z') c[i] -= 26;
+        if(islower(p[i]) && c[i] > 'z') c[i] -= 26;
+
+        printf("%c", c[i]);
+    }
+
+    printf("\nAFTER DECRYPTION : ");
+
+    for(i = 0; i < n; i++)
+    {
+        p[i] = c[i] - k;
+
+        if(isupper(c[i]) && p[i] < 'A') p[i] += 26;
+        if(islower(c[i]) && p[i] < 'a') p[i] += 26;
+
+        printf("%c", p[i]);
+    }
+
+    return 0;
+}
