@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<users>
+
+    <user>
+
+        <userid>101</userid>
+        <name>Gokul</name>
+        <address>Chennai</address>
+        <gender>Male</gender>
+
+    </user>
+
+    <user>
+
+        <userid>102</userid>
+        <name>Rahul</name>
+        <address>Bangalore</address>
+        <gender>Male</gender>
+
+    </user>
+
+    <user>
+
+        <userid>103</userid>
+        <name>Priya</name>
+        <address>Hyderabad</address>
+        <gender>Female</gender>
+
+    </user>
+
+</users>

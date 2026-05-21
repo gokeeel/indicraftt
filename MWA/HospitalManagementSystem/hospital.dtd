@@ -1,0 +1,14 @@
+<!ELEMENT hospital (patient+)>
+
+<!ELEMENT patient 
+(name, roomcharge, medicinecharge, labcharge, totalbill)>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT roomcharge (#PCDATA)>
+
+<!ELEMENT medicinecharge (#PCDATA)>
+
+<!ELEMENT labcharge (#PCDATA)>
+
+<!ELEMENT totalbill (#PCDATA)>

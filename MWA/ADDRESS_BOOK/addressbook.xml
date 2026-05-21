@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE address_book SYSTEM "addressbook.dtd">
+
+<address_book>
+
+    <contact>
+
+        <name>Gokul</name>
+
+        <address
+            street_name="Anna Nagar"
+            state="TN"
+            phone_number="9876543210">
+
+            Chennai
+
+        </address>
+
+    </contact>
+
+    <contact>
+
+        <name>Rahul</name>
+
+        <address
+            street_name="MG Road"
+            state="KA"
+            phone_number="9123456780">
+
+            Bangalore
+
+        </address>
+
+    </contact>
+
+</address_book>

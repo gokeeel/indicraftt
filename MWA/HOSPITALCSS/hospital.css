@@ -1,0 +1,16 @@
+body
+{
+    background-color: lightyellow;
+    font-family: Arial;
+}
+
+ul
+{
+    color: purple;
+    font-size: 18px;
+}
+
+li
+{
+    margin: 10px;
+}

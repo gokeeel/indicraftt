@@ -1,0 +1,12 @@
+<!ELEMENT address_book (contact+)>
+
+<!ELEMENT contact (name, address)>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT address (#PCDATA)>
+
+<!ATTLIST address
+    street_name CDATA #REQUIRED
+    state CDATA #REQUIRED
+    phone_number CDATA #REQUIRED>

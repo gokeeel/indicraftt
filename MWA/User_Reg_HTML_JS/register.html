@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>User Registration Form</title>
+
+    <script>
+
+        function validate()
+        {
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var city = document.getElementById("city").value;
+            var state = document.getElementById("state").value;
+            var country = document.getElementById("country").value;
+            var pin = document.getElementById("pin").value;
+            var user = document.getElementById("user").value;
+            var pass = document.getElementById("pass").value;
+            var email = document.getElementById("email").value;
+
+            if(fname=="" || lname=="" || city=="" || 
+               country=="" || user=="" || pass=="")
+            {
+                alert("Fill all required fields");
+                return false;
+            }
+
+            if(pin.length!=6 || isNaN(pin))
+            {
+                alert("Pincode must be 6 digits");
+                return false;
+            }
+
+            if(state.length!=2)
+            {
+                alert("State must contain 2 characters");
+                return false;
+            }
+
+            if(email.length<6 || email.indexOf('@')==-1 || 
+               email.indexOf('.')==-1)
+            {
+                alert("Invalid Email");
+                return false;
+            }
+
+            alert("Registration Successful");
+            return true;
+        }
+
+    </script>
+
+</head>
+
+<body bgcolor="lightgreen">
+
+    <h1 align="center">
+        User Registration Form
+    </h1>
+
+    <form onsubmit="return validate()">
+
+        <table border="2" cellpadding="10" align="center">
+
+            <tr>
+                <td>First Name</td>
+                <td>
+                    <input type="text" id="fname">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Last Name</td>
+                <td>
+                    <input type="text" id="lname">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea rows="4" cols="20"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>City</td>
+                <td>
+                    <input type="text" id="city">
+                </td>
+            </tr>
+
+            <tr>
+                <td>State</td>
+                <td>
+                    <input type="text" id="state">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Country</td>
+                <td>
+                    <input type="text" id="country">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pincode</td>
+                <td>
+                    <input type="text" id="pin">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Username</td>
+                <td>
+                    <input type="text" id="user">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" id="pass">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="text" id="email">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+
+                    <input type="submit" value="Register">
+
+                    <input type="reset" value="Clear">
+
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+
+</html>

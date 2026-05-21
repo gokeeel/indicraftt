@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+
+<class>
+
+    <student>
+
+        <name>Gokul</name>
+        <rollno>101</rollno>
+
+        <marks>
+            <subject>Maths</subject>
+            <score>80</score>
+        </marks>
+
+        <marks>
+            <subject>Science</subject>
+            <score>75</score>
+        </marks>
+
+        <marks>
+            <subject>English</subject>
+            <score>85</score>
+        </marks>
+
+    </student>
+
+    <student>
+
+        <name>Rahul</name>
+        <rollno>102</rollno>
+
+        <marks>
+            <subject>Maths</subject>
+            <score>40</score>
+        </marks>
+
+        <marks>
+            <subject>Science</subject>
+            <score>45</score>
+        </marks>
+
+        <marks>
+            <subject>English</subject>
+            <score>50</score>
+        </marks>
+
+    </student>
+
+</class>

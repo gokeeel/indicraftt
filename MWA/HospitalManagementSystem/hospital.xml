@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hospital SYSTEM "hospital.dtd">
+
+<hospital>
+
+    <patient>
+
+        <name>Ravi Kumar</name>
+
+        <roomcharge>5000</roomcharge>
+
+        <medicinecharge>2000</medicinecharge>
+
+        <labcharge>1500</labcharge>
+
+        <totalbill>8500</totalbill>
+
+    </patient>
+
+    <patient>
+
+        <name>Priya Sharma</name>
+
+        <roomcharge>7000</roomcharge>
+
+        <medicinecharge>3000</medicinecharge>
+
+        <labcharge>2000</labcharge>
+
+        <totalbill>12000</totalbill>
+
+    </patient>
+
+</hospital>
